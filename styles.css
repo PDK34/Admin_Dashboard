@@ -15,10 +15,60 @@ body{
 }
 
 .header{
+    width: 100%;
     background-color: white;
     grid-column: 2/3;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    padding: 0 15px;
 }
 
+.header > .first-line{
+    display: flex;
+    justify-content: space-between;
+        padding: 15px;
+    font-size: 1.2em;
+}
+
+.first-line input[type='search']{
+    width: 45vw;
+    border-radius: 25px;
+    appearance: none;
+    border: solid 1px rgb(236, 236, 236);
+    box-shadow: none;
+    background-color: rgb(237, 237, 237);
+    padding: 5px;
+}
+
+.second-line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 35px;
+}
+
+.second-line > .info{
+    font-size: 1.6em;
+    display: flex;
+    gap: 15px;
+}
+.second-line > .buttons{
+    display: flex;
+    gap: 15px;
+}
+.second-line > .buttons > button{
+    width: 90px;
+    background-color: rgb(55, 185, 255);
+    border-radius: 9px;
+    color: white;
+    height: 22px;
+    cursor: pointer;
+}
+.second-line > .buttons > button:hover{
+    background-color: rgb(100, 246, 67);
+}
 .sidebar{
 
     padding-top: 30px;
