@@ -26,9 +26,12 @@ body{
 .header > .first-line{
     display: flex;
     justify-content: space-between;
-        padding: 15px;
-    font-size: 1.2em;
-}
+        padding-top: 25px;
+
+        font-size: 1.2em;
+
+        
+    }
 
 .first-line input[type='search']{
     width: 45vw;
@@ -40,6 +43,39 @@ body{
     padding: 5px;
 }
 
+.first-line>.user-info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.first-line .bell img {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.first-line .bell img:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+.first-line img{
+    height: 45px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 40%;
+    object-fit: cover;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.second-line img{
+    height: 85px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 40%;
+    object-fit: cover;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+}
 .second-line{
     width: 100%;
     display: flex;
@@ -49,9 +85,14 @@ body{
 }
 
 .second-line > .info{
-    font-size: 1.7em;
+    font-size: 1.3em;
     display: flex;
     gap: 15px;
+}
+
+.second-line > .info h3{
+ font-size: 1.7em;
+ display: inline-block;
 }
 .second-line > .buttons{
     display: flex;
@@ -90,6 +131,7 @@ body{
     background-color: rgb(235, 235, 235);
     grid-column: 2/3;
     padding: 15px;
+    margin-top: -18px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2,1fr);
