@@ -8,7 +8,7 @@
 body{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 4.5fr;
     grid-template-rows: 1fr 4fr;
  
 }
@@ -53,12 +53,14 @@ body{
   height: 34px;
   cursor: pointer;
   vertical-align: middle;
+  border: none;
 }
 .first-line .bell img:hover{
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(249, 249, 249);
+    border-radius: 40%;
 }
 
-.first-line img{
+.first-line .profile img{
     height: 45px;
     width: auto;
     margin-right: 15px;
@@ -117,14 +119,53 @@ body{
     background-color: rgb(0, 157, 255);
 
     display:grid;
-    justify-content: center;
+    justify-items: center;
     font-size: 1.6em;
 }
 
-.sidebar > .sidebar-nav ,.sidebar-branding{
+.sidebar > .sidebar-nav ,.sidebar > .sidebar-branding{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+}
+
+
+.sidebar li{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar li:hover{
+    opacity: 70%;
+    color: #333; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar>.sidebar-title svg{
+    vertical-align: middle;
+    padding-bottom: 2px;
+    padding-right: 8px;
+    height: 35px;
+    width: auto;
+    fill: white;
+}
+
+.sidebar>.sidebar-nav svg{
+    vertical-align: middle;
+    padding-bottom: 2px;
+    padding-right:10px;
+    height: 25px;
+    width: auto;
+    fill: white;
+}
+
+.sidebar>.sidebar-branding svg{
+    vertical-align: middle;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    height: 25px;
+    width: auto;
+    fill: white;
 }
 .content{
     height: 100%; 
