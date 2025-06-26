@@ -182,12 +182,8 @@ body{
 .sidebar li:hover{
     opacity: 70%;
     color: #333; 
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    padding: 3px 5px;
 
 }
 
