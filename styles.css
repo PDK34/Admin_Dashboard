@@ -15,7 +15,7 @@ body{
 
 .header{
     width: 100%;
-    background: linear-gradient(135deg, #6bbfff, #7aceff);
+    background-color: white;
 
     grid-column: 2/3;
 
@@ -132,7 +132,7 @@ body{
     cursor: pointer;
 }
 .second-line > .buttons > button:hover{
-    background-color: rgb(100, 246, 67);
+    background-color: rgb(104, 202, 255);
 }
 .sidebar{
     color: white;
@@ -176,12 +176,19 @@ body{
 .sidebar li{
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-right: 10px;
 }
 
 .sidebar li:hover{
     opacity: 70%;
     color: #333; 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 3px 5px;
+
 }
 
 .sidebar .sidebar-title svg{
