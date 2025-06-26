@@ -45,7 +45,13 @@ body{
     box-shadow: none;
     background-color: rgb(237, 237, 237);
     padding: 5px;
+}
 
+.first-line input[type='search']:focus{
+    appearance: none;
+    outline: none;
+    border: 0.5px solid rgb(121, 120, 120);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 1);
 }
 
 .first-line>.user-info{
@@ -366,7 +372,7 @@ ul{
 }
 
 .trending{
-    margin: 10px 10px 15px 0px;
+    margin: 10px 35px 35px 0px;
 }
 .announce{
     margin: 5px 10px 35px 0px;
